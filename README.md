@@ -1,15 +1,13 @@
+# 修改版
+
+支持任意位置的私钥文件，不再局限于默认位置 `~/.ssh/id_rsa`
+
 # hexo-deployer-rsync
 
 [![Build Status](https://travis-ci.org/hexojs/hexo-deployer-rsync.svg?branch=master)](https://travis-ci.org/hexojs/hexo-deployer-rsync)
 [![NPM version](https://badge.fury.io/js/hexo-deployer-rsync.svg)](https://www.npmjs.com/package/hexo-deployer-rsync)
 
 Rsync deployer plugin for [Hexo].
-
-## Installation
-
-``` bash
-$ npm install hexo-deployer-rsync --save
-```
 
 ## Options
 
@@ -21,6 +19,7 @@ deploy:
   host: <host>
   user: <user>
   root: <root>
+  key: <path/to/you/private_key>
   port: [port] # Default is 22
   delete: [true|false] # Default is true
   args: <rsync args>
@@ -36,6 +35,7 @@ deploy:
 - **args**: Rsync arguments
 - **verbose**: Display verbose messages
 - **ignore_errors**: Ignore errors
+- **key**: you private key file path
 
 ## License
 
